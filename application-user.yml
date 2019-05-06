@@ -1,25 +1,25 @@
 server: 
   port: 8001
 spring:
-  profiles: dev #¿ª·¢»·¾³
+  profiles: dev #å¼€å‘ç¯å¢ƒ
   application:
     name: USER-PROVIDER
 eureka:
   client:
     service-url:
-      defaultZone: http://eureka-7001.com:7001/eureka  #¸æËß·şÎñÌá¹©ÕßÒª°Ñ·şÎñ×¢²áµ½ÄÄ¶ù #µ¥»ú»·¾³
+      defaultZone: http://eureka-7001.com:7001/eureka  #å‘Šè¯‰æœåŠ¡æä¾›è€…è¦æŠŠæœåŠ¡æ³¨å†Œåˆ°å“ªå„¿ #å•æœºç¯å¢ƒ
   instance:
-    prefer-ip-address: true #ÏÔÊ¾¿Í»§¶ËÕæÊµip
+    prefer-ip-address: true #æ˜¾ç¤ºå®¢æˆ·ç«¯çœŸå®ip
 ---
 server: 
   port: 8002
 spring:
-  profiles: test #²âÊÔ»·¾³
+  profiles: test #æµ‹è¯•ç¯å¢ƒ
   application:
     name: USER-PROVIDER-TEST
 eureka:
   client:
     service-url:
-      defaultZone: http://eureka-7001.com:7001/eureka  #¸æËß·şÎñÌá¹©ÕßÒª°Ñ·şÎñ×¢²áµ½ÄÄ¶ù #µ¥»ú»·¾³
+      defaultZone: http://eureka-7001.com:7001/eureka  #å‘Šè¯‰æœåŠ¡æä¾›è€…è¦æŠŠæœåŠ¡æ³¨å†Œåˆ°å“ªå„¿ #å•æœºç¯å¢ƒ
   instance:
-    prefer-ip-address: true #ÏÔÊ¾¿Í»§¶ËÕæÊµip
+    prefer-ip-address: true #æ˜¾ç¤ºå®¢æˆ·ç«¯çœŸå®ip
